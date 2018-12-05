@@ -1,19 +1,79 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body>
-    <a href="index.html">Home</a>
-    <a href="contact-me.html">Contact Me</a>
+
+<head>
+  <meta charset="utf-8">
+  <title>Inputs</title>
+  <link rel="stylesheet" href="css/styles2.css">
+  <link rel="icon" href="eyebrowFavicon2.ico">
+
+</head>
+
+<body>
+  <!-- Navigation Header -->
+      <header>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li> |
+            <li><a href="hobbies.html">Hobbies</a></li> |
+            <li><a href="contact-me.html">Contact Me</a></li>
+          </ul>
+        </nav>
+      </header>
+
+  <h1>Different Input Types</h1>
+  <!--
+    Goes to backend and takes user back to home page
     <form class="" action="index.html" method="post">
-      <input type="checkbox" name="" value=""><br>
-      <input type="radio" name="" value=""><br>
-      <input type="date" name="" value=""><br>
+    -->
+  <!-- cmd + / to comment-->
+  <div class="form">
+
+
+    <form class="" action="" method="get">
+      <strong>First Name: </strong><input type="text" name="firstname" value=""><br>
+      <strong>Last Name: </strong><input type="text" name="lastname" value=""><br>
+      <strong>email: </strong><input type="email" name="email" value=""><br>
+      <strong>Password: </strong><input required type="password" name="password" value="" min="8"><br>
+      <strong>Birthday: </strong><input type="date" name="bday" value=""><br>
+      <strong>Gender:</strong><br>
+      <input class="pointer" type="radio" name="gender" value="Yes">Yes<br>
+      <input class="pointer" type="radio" name="gender" value="No">No<br>
+      <strong>Pets:</strong><br>
+      <input class="pointer" type="checkbox" value="catPerson">Cats<br>
+      <input class="pointer" type="checkbox" value="dogPerson">Dogs<br>
+      <strong>Car:</strong><br>
+      <select class="" name="cars">
+        <option value="volvo">Volvo</option>
+        <option value="soccer_mom">Soccer Mom</option>
+        <option value="hoopty">Hoopty</option>
+        <option value="batmobile">Batmobile</option>
+        <option value="G6">G6</option>
+      </select><br>
       <input type="file" name="" value=""><br>
       <input type="range" name="" value=""><br>
-    </form>
+      <input type="color" name="" value="">
+      <input type="time" name="" value="">
+      <input type="datetime-local" name="" value=""><br>
+      <textarea name="name" rows="8" cols="80"></textarea><br>
 
-  </body>
+      <input class="pointer" type="submit" name="" value="Register!">
+      <input class="pointer" type="reset" name="" value="Reset">
+  </div>
+
+<footer>
+  <p>© 2018 Caleb Cox. All rights reserved.</p>
+</footer>
+
+
+</body>
+<!-- Other HTML elements/tags
+attribute: contenteditable - can be edited or not
+<iframe src="" width="" height="">use to show a web page within a webpage</iframe>
+Add videos: <video src="videofile.ogg" autoplay poster="posterimage.jpg"></video>
+Add audio: <audio src=""></audio>
+Draw graphics on webpage: <canvas id="canvas" width="300" height="300"></canvas>
+Scalar measurement w/ range: <meter value="" min="0" max="100"></meter>
+navigation links: <nav></nav>
+ -->
 </html>

@@ -1,0 +1,124 @@
+body {
+    background-color: #ebf0f6;
+    background-image: url("https://images.pexels.com/photos/1084510/pexels-photo-1084510.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+    background-size: cover;
+}
+
+hr {
+    border-top: 5px dotted grey;
+    width: 5%;
+}
+/* select h1 and h3 */
+h1, h3 {
+    color: #66BFBF;
+}
+/* Select all list items in navs */
+nav li {
+  display: inline-block;
+  list-style: none;
+  text-transform: lowercase;
+}
+
+/* Font Sizes
+px - pixels
+em - relative to containing element
+    ex. p {font-size: 20px;}
+        span {font-size: 5em;}
+    span will be 5 times the size as p
+    size of M
+    16px = 100% = 1em
+
+rem - relative to root element
+    **most adaptable and relible sizing method**
+    ex. p {font-size: 20px;}
+        span {font-size: 5rem;}
+    span will be 5 times the size of html element
+          i.e. <html>
+                 <body>
+                   hello world!
+                 </body>
+               </html>
+ */
+
+/* Box Model
+
+1: all
+2: top&bottom left&right
+3: top left&right bottom
+4: top right bottom left (clockwise)
+
+
+Center block elements
+margin: 0 auto;
+width: 30%;
+
+*/
+
+/* Positioning
+Static - children stacking on top of parent (default)
+Relative - position is relative to side
+      ex. img{
+            position: relative;
+            right: 30px;
+          }
+      right margin between image and where
+      it used to be/should have between
+      in the value of 30px
+
+      **Does NOT affect flow of HTML
+          GHOST
+
+Absolute - position is relative to parent element
+      ex. Img inside Div
+          div{
+            position: relative;
+          }
+
+          img{
+            position: absolute;
+            right: 30px;
+          }
+      Shift to right of screen, add right margin
+      of 30px between img and parent div
+
+      **DOES affect flow of html
+        No friendship ever existed
+
+  Fixed - sticks to where you put it
+      ex. Navbar, side bar
+
+
+
+ */
+
+/*
+Selectors win out on:
+-Specificity
+-Importantce
+-Source Order
+
+select all elements (slow, not recommended)
+* {
+  text-align: right;
+}
+
+select x parents of y elements
+y > x {
+  color: blue;
+}
+
+select any x element exactly after y element
+y + x {
+    color: green;
+}
+
+select last child of class
+.class:lastchild {
+    text-align: right;
+}
+
+select firstchild of class
+.class:firstchild {
+    text-align: center;
+}
+ */
